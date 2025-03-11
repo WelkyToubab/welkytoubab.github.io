@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Developer Account and App Setup</title>
+</head>
+<body>
+    <h1>Spotify Developer Account and App Setup</h1>
+    
+    <h2>1. Create a Spotify Developer Account</h2>
+    <p>Follow these steps to create your Spotify Developer account:</p>
+    <ol>
+        <li>Visit the <a href="https://developer.spotify.com/dashboard/applications" target="_blank">Spotify Developer Dashboard</a>.</li>
+        <li>Log in with your Spotify account credentials.</li>
+        <li>If you don't have a Spotify account, you'll need to create one first.</li>
+    </ol>
+    <img src="YOUR_IMAGE_URL_1" alt="Spotify Developer Dashboard" />
+    
+    <h2>2. Create a Spotify App</h2>
+    <p>Once logged in, you'll need to create a new Spotify application:</p>
+    <ol>
+        <li>Click the <strong>Create an App</strong> button.</li>
+        <li>Fill in the application details (name, description, etc.).</li>
+        <li>For the <strong>Redirect URI</strong>, enter: <code>http://12.0.0.1:8888/callback/</code>.</li>
+        <li>Click the <strong>Create</strong> button to finalize the app creation.</li>
+    </ol>
+    <img src="YOUR_IMAGE_URL_2" alt="Create App Form" />
+
+    <h2>3. Get Your Spotify User ID</h2>
+    <p>Your Spotify User ID is required for some integrations. Here's how to find it:</p>
+    <ol>
+        <li>Go to your <a href="https://www.spotify.com" target="_blank">Spotify account page</a> and log in.</li>
+        <li>Navigate to the <strong>Profile</strong> section of your account settings.</li>
+        <li>Right-click on your username and select <strong>Copy link</strong>.</li>
+        <li>In the copied link, your Spotify user ID will appear after the final slash (<code>https://open.spotify.com/user/{your-user-id}</code>).</li>
+    </ol>
+    <img src="YOUR_IMAGE_URL_3" alt="Spotify Profile User ID" />
+    
+    <h2>4. Get the Artist ID</h2>
+    <p>To get the artist ID for any artist on Spotify:</p>
+    <ol>
+        <li>Search for the artist on Spotify and go to their artist page.</li>
+        <li>In the URL, you'll see the artist ID after <code>spotify.com/artist/</code>. It will look like this: <code>https://open.spotify.com/artist/{artist-id}</code>.</li>
+        <li>Copy the artist ID from the URL.</li>
+    </ol>
+    <img src="YOUR_IMAGE_URL_4" alt="Artist Page URL" />
+
+</body>
+</html>
