@@ -37,13 +37,27 @@
 
     /* Body and other styles */
     body {
-        text-align: justify;
-        width: 80%;
-        margin: auto;
+        background-color: #004d33; /* Dark green shade */
+        color: white; /* Make all text white */
+        font-family: Arial, sans-serif; /* Optional: Set font family */
+        text-align: justify; /* Keep existing text alignment */
+        width: 80%; /* Limits width for better readability */
+        margin: auto; /* Centers the block */
     }
 
     h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, div {
-        text-align: inherit;
+        color: white; /* Ensures all text is white */
+        text-align: inherit; /* Ensures all elements follow body alignment */
+    }
+
+    /* Optional: add custom styling for links */
+    a {
+        color: #aaffff; /* Lighter cyan shade for links */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline; /* Underline links on hover */
     }
 </style>
 
