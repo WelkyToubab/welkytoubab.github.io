@@ -7,37 +7,35 @@
     
     <style>
         img {
-            max-width: 25%;
+            width: 100%; /* Makes images responsive */
+            max-width: 500px; /* Caps the maximum size */
             height: auto;
-            display: block; /* Forces each image to take a full line */
-            margin: 5px; /* Adds spacing between images */
-	    border: 2pt solid gold; /* Adds a 2pt golden border */
+            display: block;
+            margin: 5px auto; /* Centers images */
+            border: 2pt solid gold;
         }
 
         @media (min-width: 768px) {
             img {
-                max-width: 500px; /* Larger images for larger screens */
+                max-width: 500px; /* Keep the cap at 500px */
             }
-	p {
-	    text-align: justify; /* Not needed for images, but useful for containers */
-	}
+        }
+
+        p {
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
     <h1>How to Set Up a Spotify Developer Account and Begin Using the Spotify API</h1>
 
-    <p>
-        <a href="https://github.com/WelkyToubab/welkytoubab.github.io/raw/refs/heads/main/DOWNLOADSpotifyArtistPlaylistCreator_linux.zip" 
+    <h1>
+        <a href="https://github.com/WelkyToubab/welkytoubab.github.io/raw/refs/heads/main/DOWNLOADSpotifyArtistPlaylistCreator_linux.zip"
            download="DOWNLOADSpotifyArtistPlaylistCreator_linux.zip">
-           <h1>FIRST, DOWNLOAD THE PROGRAM!</h1>
+           FIRST, DOWNLOAD THE PROGRAM!
         </a>
-    </p>
-    
-</body>
-</html>
+    </h1>
 
-<body>
-    
     <h2>1. Create a Spotify Developer Account</h2>
     <p>Follow these steps to create your Spotify Developer account:</p>
     <ol>
@@ -47,7 +45,7 @@
     </ol>
     <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New1.JPEG?raw=true" alt="Accessing Spotify Developer Dashboard" />
     <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New2.JPEG?raw=true" alt="Login" />
-    
+
     <h2>2. Create a Spotify App</h2>
     <p>Once logged in, you'll need to create a new Spotify application:</p>
     <ol>
@@ -70,8 +68,6 @@
     </ol>
     <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New6.JPEG?raw=true" alt="Finding Spotify User ID" />
     <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New7.JPEG?raw=true" alt="Click on 'Account Details'" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New8.JPEG?raw=true" alt="Click on 'Edit Profile'" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New9.JPEG?raw=true" alt="Take Note of Spotify User ID" />
     
     <h2>4. Get the Artist ID</h2>
     <p>To get the artist ID for any artist on Spotify:</p>
@@ -91,6 +87,5 @@
     <p style="font-style: italic; text-align: center;">
         I'm just getting started learning how to do all of this (any of this), so stay tuned!
     </p>
-
 </body>
 </html>
