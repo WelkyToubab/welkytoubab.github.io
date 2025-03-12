@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Dev and API Instructions</title>
     
-    <style>
+<style>
+    /* Container to hold the images */
+    .image-container {
+        display: flex;
+        flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
+        justify-content: center; /* Centers the images horizontally */
+        gap: 10px; /* Adds spacing between images */
+    }
+
+    /* Image styling */
+    img {
+        height: 200px; /* Set height to a fixed value */
+        width: auto; /* Maintain aspect ratio by adjusting width */
+        max-width: 100%; /* Ensure images never overflow their container */
+        border: 2pt solid gold;
+    }
+
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+        .image-container {
+            justify-content: flex-start; /* Align images to the left on wider screens */
+        }
+
         img {
-            width: 100%; /* Makes images responsive */
-            max-width: 300px; /* Caps the maximum size */
-            height: auto;
-            display: block;
-            margin: 5px auto; /* Centers images */
-            border: 2pt solid gold;
+            height: auto; /* Let height be auto on larger screens */
+            max-height: 200px; /* Limit max height of images */
+            width: auto; /* Ensure width adjusts to maintain aspect ratio */
         }
+    }
 
-        @media (min-width: 768px) {
-            img {
-                max-width: 500px; /* Keep the cap at 500px */
-            }
-        }
+    /* Body and other styles */
+    body {
+        text-align: justify;
+        width: 80%;
+        margin: auto;
+    }
 
-        body {
-            text-align: justify;  /* Justifies text */
-            width: 80%;           /* Limits width for better readability */
-            margin: auto;         /* Centers the block */
-        }
+    h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, div {
+        text-align: inherit;
+    }
+</style>
 
-        h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, div {
-            text-align: inherit; /* Ensures all elements follow body alignment */
-        }
-
-    </style>
 </head>
 <body>
     <h1>How to Set Up a Spotify Developer Account and Begin Using the Spotify API</h1>
@@ -50,9 +65,12 @@
         <li>Log in with your Spotify account credentials.</li>
         <li>If you don't have a Spotify account, you'll need to create one first.</li>
     </ol>
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New1.JPEG?raw=true" alt="Accessing Spotify Developer Dashboard" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New2.JPEG?raw=true" alt="Login" />
 
+    <div class="image-container">
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New1.JPEG?raw=true" alt="Accessing Spotify Developer Dashboard" />
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New2.JPEG?raw=true" alt="Login" />
+    </div>
+    
     <h2>2. Create a Spotify App</h2>
     <p>Once logged in, you'll need to create a new Spotify application:</p>
     <ol>
@@ -61,10 +79,12 @@
         <li>For the <strong>Redirect URI</strong>, enter: <code>http://12.0.0.1:8888/callback/</code>.</li>
         <li>Click the <strong>Create</strong> button to finalize the app creation.</li>
     </ol>
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New3.JPEG?raw=true" alt="Creating a Spotify Developer App" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New4.JPEG?raw=true" alt="Spotify Developer App Details" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New5.JPEG?raw=true" alt="Spotify Developer App Details" />
-
+    <div class="image-container">
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New3.JPEG?raw=true" alt="Creating a Spotify Developer App" />
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New4.JPEG?raw=true" alt="Spotify Developer App Details" />
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New5.JPEG?raw=true" alt="Spotify Developer App Details" />
+    </div>
+    
     <h2>3. Get Your Spotify User ID</h2>
     <p>Your Spotify User ID is required for some integrations. Here's how to find it:</p>
     <ol>
@@ -73,8 +93,10 @@
         <li>Right-click on your username and select <strong>Copy link</strong>.</li>
         <li>In the copied link, your Spotify user ID will appear after the final slash (<code>https://open.spotify.com/user/{your-user-id}</code>).</li>
     </ol>
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New6.JPEG?raw=true" alt="Finding Spotify User ID" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New7.JPEG?raw=true" alt="Click on 'Account Details'" />
+    <div class="image-container">
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New6.JPEG?raw=true" alt="Finding Spotify User ID" />
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New7.JPEG?raw=true" alt="Click on 'Account Details'" />
+    </div>
     
     <h2>4. Get the Artist ID</h2>
     <p>To get the artist ID for any artist on Spotify:</p>
@@ -83,9 +105,11 @@
         <li>In the URL, you'll see the artist ID after <code>spotify.com/artist/</code>. It will look like this: <code>https://open.spotify.com/artist/{artist-id}</code>.</li>
         <li>Copy the artist ID from the URL.</li>
     </ol>
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New10.JPEG?raw=true" alt="Navigate to Artist Page on Spotify" />
-    <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New11.JPEG?raw=true" alt="Retrieve Spotify Artist ID from URL" />
-
+    <div class="image-container">
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New10.JPEG?raw=true" alt="Navigate to Artist Page on Spotify" />
+        <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New11.JPEG?raw=true" alt="Retrieve Spotify Artist ID from URL" />
+    </div>
+    
     <p style="font-style: italic; text-align: center; margin-top: 20px;">
         All work and coding associated with this page was produced by Boyd Coleman Mpho Hayes  
         (with some welcome help from ChatGPT).  
