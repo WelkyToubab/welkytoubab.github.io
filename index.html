@@ -19,7 +19,9 @@
         height: 500px;
         width: auto; /* Maintain aspect ratio */
         max-width: 100%; /* Prevent overflow */
-        border: 2pt #00a7f1;
+        border: 2pt solid #17365d;
+        box-sizing: border-box;
+        
     }
 
     /* Media query for large screens */
@@ -37,7 +39,7 @@
 
     /* Body and other styles */
     body {
-        background-color: #c4bfb5;
+        background-color: #eeeeee;
         color: #000000;
         font-family: Arial, sans-serif; 
         text-align: justify;
@@ -45,7 +47,12 @@
         margin: auto;
     }
 
-    h1, h2, h4, h5, h6, p, ul, ol, li, a, span, div {
+    h1 {
+        color: #17365d;
+        text-align: inherit;
+    }
+    
+    h2, h4, h5, h6, ul, li, a, span, div {
         color: #853b52;
         text-align: inherit;
     }
@@ -56,6 +63,11 @@
         width: 80%
     }
 
+    p, ol {
+        color: #000000;
+        text-align: inherit;
+    }
+    
     /* Links */
     a {
         color: #ea5ef1;
@@ -71,13 +83,14 @@
 <body>
     <h1>How to Set Up a Spotify Developer Account and Begin Using the Spotify API</h1>
 
-    <h1>
+    <h2>
         <a href="https://github.com/WelkyToubab/welkytoubab.github.io/raw/refs/heads/main/DOWNLOADSpotifyArtistPlaylistCreator_linux.zip"
            download="DOWNLOADSpotifyArtistPlaylistCreator_linux.zip">
-           FIRST, DOWNLOAD THE PROGRAM!
+           <b>FIRST, DOWNLOAD THE PROGRAM!</b>
         </a>
-    </h1>
+    </h2>
 
+    <h2>Hello!</h2>
     <h3>So you want to make a cool Spotify playlist including every single song by (and featuring) a specific artist, huh? Well, you've come to the right place!</h3> 
     <h3>This is a fun little project I have been building to help me learn Python better and how to interact with APIs. And also HTML (I'm really bad at this!). Hopefully it will be fun and maybe somewhat useful for you.</h3>
     <h3>This guide will walk you through how to get all the information you'll need to enter into the form (that program you just downloaded) in order to get your playlist up and running. Don't worry—there's no risk of messing up your Spotify account or anything like that. Just follow the steps below, take note of the information you gather throughout <u>(PROBABLY DON'T SHARE THESE CODES WITH ANYONE ELSE)</u>, and have fun making your playlist!</h3>
@@ -85,7 +98,7 @@
     
     <h2>1. Create a Spotify Developer Account</h2>
     <p>Follow these steps to create your Spotify Developer account:</p>
-    <ol>
+    <ol type="a">
         <li>Visit the <a href="https://developer.spotify.com/dashboard/applications" target="_blank">Spotify Developer Dashboard</a>.</li>
         <li>Log in with your Spotify account credentials.</li>
         <li>If you don't have a Spotify account, you'll need to create one first.</li>
@@ -97,7 +110,7 @@
     
     <h2>2. Create a Spotify App</h2>
     <p>Once logged in, you'll need to create a new Spotify application:</p>
-    <ol>
+    <ol type="a">
         <li>Click the <strong>Create an App</strong> button.</li>
         <li>Fill in the application details (name, description, etc.).</li>
         <li>For the <strong>Redirect URI</strong>, enter: <code>http://12.0.0.1:8888/callback/</code>.</li>
@@ -111,7 +124,7 @@
     
     <h2>3. Get Your Spotify User ID</h2>
     <p>Your Spotify User ID is required for some integrations. Here's how to find it:</p>
-    <ol>
+    <ol type="a">
         <li>Go to your <a href="https://www.spotify.com" target="_blank">Spotify account page</a> and log in.</li>
         <li>Navigate to the <strong>Profile</strong> section of your account settings.</li>
         <li>Right-click on your username and select <strong>Copy link</strong>.</li>
@@ -124,7 +137,7 @@
     
     <h2>4. Get the Artist ID</h2>
     <p>To get the artist ID for any artist on Spotify:</p>
-    <ol>
+    <ol type="a">
         <li>Search for the artist on Spotify and go to their artist page.</li>
         <li>In the URL, you'll see the artist ID after <code>spotify.com/artist/</code>. It will look like this: <code>https://open.spotify.com/artist/{artist-id}</code>.</li>
         <li>Copy the artist ID from the URL.</li>
