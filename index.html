@@ -6,53 +6,58 @@
     <title>Spotify Dev and API Instructions</title>
     
 <style>
-    /* Container to hold the images */
+    /* Image container */
     .image-container {
         display: flex;
-        flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
-        justify-content: center; /* Centers the images horizontally */
-        gap: 10px; /* Adds spacing between images */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-    /* Image styling */
+    /* Image style */
     img {
-        height: 500px; /* Set height to a fixed value */
-        width: auto; /* Maintain aspect ratio by adjusting width */
-        max-width: 100%; /* Ensure images never overflow their container */
+        height: 500px;
+        width: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Prevent overflow */
         border: 2pt solid gold;
     }
 
-    /* Media query for larger screens */
+    /* Media query for large screens */
     @media (min-width: 768px) {
         .image-container {
-            justify-content: flex-start; /* Align images to the left on wider screens */
+            justify-content: flex-start;
         }
 
         img {
-            height: auto; /* Let height be auto on larger screens */
-            max-height: 500px; /* Limit max height of images */
-            width: auto; /* Ensure width adjusts to maintain aspect ratio */
+            height: auto;
+            max-height: 500px;
+            width: auto;
         }
     }
 
     /* Body and other styles */
     body {
-        background-color: #004d33; /* Dark green shade */
-        color: white; /* Make all text white */
-        font-family: Arial, sans-serif; /* Optional: Set font family */
-        text-align: justify; /* Keep existing text alignment */
-        width: 80%; /* Limits width for better readability */
-        margin: auto; /* Centers the block */
+        background-color: #c4bfb5;
+        color: black;
+        font-family: Arial, sans-serif; 
+        text-align: justify;
+        width: 80%; /* Limit for better readability */
+        margin: auto;
     }
 
-    h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, span, div {
-        color: white; /* Ensures all text is white */
-        text-align: inherit; /* Ensures all elements follow body alignment */
+    h1, h2, h4, h5, h6, p, ul, ol, li, a, span, div {
+        color: #eb7f23;
+        text-align: inherit;
     }
 
-    /* Optional: add custom styling for links */
+    h3 {
+        color: #00c929;
+        text-align: inherit;
+    }
+
+    /* Links */
     a {
-        color: #aaffff; /* Lighter cyan shade for links */
+        color: #ea5ef1;
         text-decoration: none;
     }
 
@@ -72,6 +77,8 @@
         </a>
     </h1>
 
+    <h3>So you want to make a cool Spotify playlist with every single song either by or featuring a specific artist, huh? We'll you've come to the right place! This is a fun little project I have been doing to help me learn Python better and how to interact with APIs. Hopefully it will be fun and maybe somewhat useful for you. This guide will walk you through how to get all the information you'll need to enter into the form (that program you just downloaded) in order to get your playlist up and running. Don't worry—there's no risk of messing up your Spotify account or anything like that. Just follow the steps below, take note of the information you gather throughout (PROBABLY DON'T SHARE THESE CODES WITH ANYONE ELSE), and have fun making your playlist! If you have any questions or concerns, please reach out to me at welkytoubab@duck.com.</h3>
+    
     <h2>1. Create a Spotify Developer Account</h2>
     <p>Follow these steps to create your Spotify Developer account:</p>
     <ol>
@@ -79,7 +86,6 @@
         <li>Log in with your Spotify account credentials.</li>
         <li>If you don't have a Spotify account, you'll need to create one first.</li>
     </ol>
-
     <div class="image-container">
         <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New1.JPEG?raw=true" alt="Accessing Spotify Developer Dashboard" />
         <img src="https://github.com/WelkyToubab/welkytoubab.github.io/blob/main/images/New2.JPEG?raw=true" alt="Login" />
